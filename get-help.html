@@ -68,11 +68,37 @@
         <h2>Teacher Request Form</h2>
         <p>Submit a request and our team will connect you with the resources you need.</p>
       </div>
-      <div class="form-placeholder reveal">
-        <div class="form-placeholder__icon">📋</div>
-        <h3>Teacher Request Form</h3>
-        <p>Weave form will be embedded here. <a href="#form">Link to form →</a></p>
-      </div>
+      <form class="site-form reveal" action="https://formsubmit.co/info@wellcareco.com" method="POST">
+        <input type="hidden" name="_subject" value="4CO Kids — Teacher Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://wellcaresite.github.io/4cokids-site/get-help.html#teachers">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="teacher-name">Your Name *</label>
+            <input type="text" id="teacher-name" name="Name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="teacher-school">School Name *</label>
+            <input type="text" id="teacher-school" name="School" placeholder="School name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="teacher-email">Email *</label>
+            <input type="email" id="teacher-email" name="Email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="teacher-phone">Phone</label>
+            <input type="tel" id="teacher-phone" name="Phone" placeholder="(719) 555-0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="teacher-needs">What do you need? *</label>
+          <textarea id="teacher-needs" name="Needs" placeholder="Tell us about the supplies, clothing, or support your students need..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Submit Request →</button>
+      </form>
     </div>
   </section>
 
@@ -101,11 +127,37 @@
         <h2>Family Help Request Form</h2>
         <p>Fill out the form below and our team will reach out to provide support.</p>
       </div>
-      <div class="form-placeholder reveal">
-        <div class="form-placeholder__icon">👨‍👩‍👧‍👦</div>
-        <h3>Family Help Request</h3>
-        <p>Weave form will be embedded here. <a href="#form">Link to form →</a></p>
-      </div>
+      <form class="site-form reveal" action="https://formsubmit.co/info@wellcareco.com" method="POST">
+        <input type="hidden" name="_subject" value="4CO Kids — Family Help Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://wellcaresite.github.io/4cokids-site/get-help.html#families">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="family-name">Your Name *</label>
+            <input type="text" id="family-name" name="Name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="family-email">Email *</label>
+            <input type="email" id="family-email" name="Email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="family-phone">Phone</label>
+            <input type="tel" id="family-phone" name="Phone" placeholder="(719) 555-0000">
+          </div>
+          <div class="form-group">
+            <label for="family-children">Number of Children</label>
+            <input type="number" id="family-children" name="Number of Children" placeholder="0" min="0">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="family-needs">How can we help? *</label>
+          <textarea id="family-needs" name="Description" placeholder="Tell us about the family's situation and what kind of support is needed..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Submit Request →</button>
+      </form>
     </div>
   </section>
 
@@ -126,7 +178,7 @@
         <div class="footer__brand"><img src="images/logo.png" alt="4 Colorado Kids"><p>Helping close the gap for local families and kids living in poverty in Colorado Springs and beyond.</p><div class="footer__social"><a href="https://www.facebook.com/4ColoradoKids" target="_blank" aria-label="Facebook"><img src="images/icons/facebook.png" alt=""></a><a href="#" target="_blank" aria-label="YouTube"><img src="images/icons/youtube.png" alt=""></a></div></div>
         <div><h4>Programs</h4><ul class="footer__links"><li><a href="index.html#programs">Erase the Need</a></li><li><a href="index.html#programs">Sponsor a Smile</a></li><li><a href="index.html#programs">Adaptive Equipment</a></li></ul></div>
         <div><h4>Take Action</h4><ul class="footer__links"><li><a href="#donate">Donate</a></li><li><a href="index.html#involved">Volunteer</a></li><li><a href="index.html#involved">Host a Drive</a></li></ul></div>
-        <div><h4>Connect</h4><ul class="footer__links"><li><a href="contact-us.html">Contact Us</a></li><li><a href="tel:7195985555">719-598-5555</a></li><li><a href="mailto:info@4cokids.org">info@4cokids.org</a></li></ul></div>
+        <div><h4>Connect</h4><ul class="footer__links"><li><a href="contact-us.html">Contact Us</a></li><li><a href="tel:7195985555">719-598-5555</a></li><li><a href="mailto:info@wellcareco.com">info@wellcareco.com</a></li></ul></div>
       </div>
       <div class="footer__bottom"><p>&copy; 2024 4 Colorado Kids. All rights reserved.</p><p>2105 Academy Circle, Colorado Springs, CO 80909</p></div>
     </div>

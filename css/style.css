@@ -963,7 +963,87 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* ---------- Form Placeholder ---------- */
+/* ---------- Forms ---------- */
+.site-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text);
+  background: var(--white);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px rgba(41, 182, 209, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--gray-400);
+}
+
+.form-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px 32px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--amber) 0%, var(--amber-dark) 100%);
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: 0 4px 15px rgba(41, 182, 209, 0.3);
+}
+
+.form-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
 .form-placeholder {
   background: var(--gray-100);
   border: 2px dashed var(--gray-200);
@@ -1112,7 +1192,7 @@ h1, h2, h3, h4, h5, h6 {
   .stats-bar__inner { grid-template-columns: repeat(2, 1fr); }
   .stat { padding: 28px 16px; }
   .stat__number { font-size: 32px; }
-  .contact-bar { grid-template-columns: 1fr; }
+  .contact-bar, .form-row { grid-template-columns: 1fr; }
   .footer__top { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; text-align: center; }
 
