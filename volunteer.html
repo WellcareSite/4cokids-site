@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer — 4 Colorado Kids</title>
+  <meta name="description" content="Volunteer with 4 Colorado Kids in Colorado Springs. Help sort supplies, run events, and make a difference for local kids.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="nav-wrap scrolled">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo"><img src="images/logo.png" alt="4 Colorado Kids"></a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="index.html#get-help" class="nav__link">Get Help</a></li>
+        <li><a href="index.html#about" class="nav__link">About</a></li>
+        <li><a href="index.html#programs" class="nav__link">Programs</a></li>
+        <li><a href="index.html#involved" class="nav__link">Get Involved</a></li>
+        <li><a href="contact-us.html" class="nav__link">Contact</a></li>
+        <li class="nav__donate"><a href="#donate" class="btn btn-primary btn-sm">Donate</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Volunteer</h1>
+      <p>Give your time and make a real difference for local kids.</p>
+    </div>
+  </section>
+
+  <!-- Why Volunteer -->
+  <section class="section">
+    <div class="container">
+      <div class="story">
+        <div class="story__content reveal-left">
+          <div class="section-tag">Give Your Time</div>
+          <h2>Why Volunteer With Us?</h2>
+          <p style="font-size: 17px; color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">Every pair of hands makes a difference. Our volunteers are the backbone of 4 Colorado Kids — without them, we couldn't serve the thousands of children and families who count on us.</p>
+          <p style="font-size: 15px; color: var(--text-light); margin-bottom: 8px;"><strong>Ways you can help:</strong></p>
+          <ul style="list-style: disc; padding-left: 24px; margin-bottom: 0;">
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Sort &amp; pack</strong> — Organize donated supplies into backpacks and care packages</li>
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Events</strong> — Help run donation drives, community events, and fundraisers</li>
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Delivery</strong> — Transport supplies to schools and families in need</li>
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Social media</strong> — Help spread the word and share our mission online</li>
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Administrative</strong> — Data entry, phone calls, and office support</li>
+          </ul>
+        </div>
+        <div class="story__image reveal-right">
+          <img src="images/content/content-2.jpg" alt="Volunteers in action">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Form -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Sign Up</div>
+        <h2>Volunteer Application</h2>
+        <p>Fill out the form below and we'll reach out to match you with an opportunity.</p>
+      </div>
+      <form class="site-form reveal" action="https://formsubmit.co/info@wellcareco.com" method="POST">
+        <input type="hidden" name="_subject" value="4CO Kids — Volunteer Signup">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://wellcaresite.github.io/4cokids-site/volunteer.html">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vol-name">Your Name *</label>
+            <input type="text" id="vol-name" name="Name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="vol-email">Email *</label>
+            <input type="email" id="vol-email" name="Email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vol-phone">Phone *</label>
+            <input type="tel" id="vol-phone" name="Phone" placeholder="(719) 555-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="vol-interest">I'm interested in... *</label>
+            <select id="vol-interest" name="Interest" required>
+              <option value="" disabled selected>Select an area...</option>
+              <option value="Sorting & Packing Supplies">Sorting & packing supplies</option>
+              <option value="Events & Fundraisers">Events & fundraisers</option>
+              <option value="Delivery & Drop-offs">Delivery & drop-offs</option>
+              <option value="Social Media & Outreach">Social media & outreach</option>
+              <option value="Administrative Support">Administrative support</option>
+              <option value="Whatever is needed!">Whatever is needed!</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vol-availability">Availability *</label>
+            <select id="vol-availability" name="Availability" required>
+              <option value="" disabled selected>Select availability...</option>
+              <option value="Weekdays">Weekdays</option>
+              <option value="Weekends">Weekends</option>
+              <option value="Evenings">Evenings</option>
+              <option value="Flexible">Flexible / any time</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="vol-frequency">How often? *</label>
+            <select id="vol-frequency" name="Frequency" required>
+              <option value="" disabled selected>Select frequency...</option>
+              <option value="One-time">One-time event</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Monthly">Monthly</option>
+              <option value="As Needed">As needed / on-call</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="vol-details">Anything else we should know?</label>
+          <textarea id="vol-details" name="Additional Details" placeholder="Special skills, group volunteering, preferred dates, etc."></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Sign Up to Volunteer →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="donate">
+    <div class="container reveal">
+      <h2>Prefer to Donate Instead?</h2>
+      <p>If you can't volunteer your time, a financial contribution helps just as much.</p>
+      <a href="#donate" class="btn btn-primary btn-lg">Donate via Square →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__nonprofit">4 Colorado Kids is a 501(c)(3) nonprofit organization. All donations are tax deductible.</div>
+      <div class="footer__top">
+        <div class="footer__brand"><img src="images/logo.png" alt="4 Colorado Kids"><p>Helping close the gap for local families and kids living in poverty in Colorado Springs and beyond.</p><div class="footer__social"><a href="https://www.facebook.com/4ColoradoKids" target="_blank" aria-label="Facebook"><img src="images/icons/facebook.png" alt=""></a><a href="#" target="_blank" aria-label="YouTube"><img src="images/icons/youtube.png" alt=""></a></div></div>
+        <div><h4>Programs</h4><ul class="footer__links"><li><a href="index.html#programs">Erase the Need</a></li><li><a href="index.html#programs">Sponsor a Smile</a></li><li><a href="index.html#programs">Adaptive Equipment</a></li></ul></div>
+        <div><h4>Take Action</h4><ul class="footer__links"><li><a href="#donate">Donate</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="host-a-drive.html">Host a Drive</a></li></ul></div>
+        <div><h4>Connect</h4><ul class="footer__links"><li><a href="contact-us.html">Contact Us</a></li><li><a href="tel:7195985555">719-598-5555</a></li><li><a href="contact-us.html#get-in-touch">Send a message</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2024 4 Colorado Kids. All rights reserved.</p><p>2105 Academy Circle, Colorado Springs, CO 80909</p></div>
+    </div>
+  </footer>
+
+  <a href="#donate" class="floating-donate">💛 Donate</a>
+  <script src="js/main.js"></script>
+</body>
+</html>

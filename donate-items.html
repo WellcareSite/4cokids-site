@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Items — 4 Colorado Kids</title>
+  <meta name="description" content="Donate school supplies, clothing, coats, adaptive equipment, and food to kids in need in Colorado Springs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="nav-wrap scrolled">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo"><img src="images/logo.png" alt="4 Colorado Kids"></a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="index.html#get-help" class="nav__link">Get Help</a></li>
+        <li><a href="index.html#about" class="nav__link">About</a></li>
+        <li><a href="index.html#programs" class="nav__link">Programs</a></li>
+        <li><a href="index.html#involved" class="nav__link">Get Involved</a></li>
+        <li><a href="contact-us.html" class="nav__link">Contact</a></li>
+        <li class="nav__donate"><a href="#donate" class="btn btn-primary btn-sm">Donate</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Donate Items</h1>
+      <p>School supplies, clothing, coats, and more — every item makes an impact.</p>
+    </div>
+  </section>
+
+  <!-- What We Need -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Most Needed</div>
+        <h2>Items We're Always Looking For</h2>
+        <p>These are the items our kids and families need most. All donations should be new or in excellent condition.</p>
+      </div>
+      <div class="programs reveal-stagger">
+        <div class="program-card">
+          <img src="images/icons/backpack.png" alt="School Supplies" class="program-card__icon">
+          <h3 class="program-card__title">School Supplies</h3>
+          <p class="program-card__text">Backpacks, notebooks, pencils, crayons, folders, glue sticks, scissors, and rulers.</p>
+        </div>
+        <div class="program-card">
+          <img src="images/icons/tree.png" alt="Clothing" class="program-card__icon">
+          <h3 class="program-card__title">Clothing &amp; Coats</h3>
+          <p class="program-card__text">Winter coats, gloves, hats, socks, underwear, shoes, and everyday clothing (all sizes).</p>
+        </div>
+        <div class="program-card">
+          <img src="images/icons/wheelchair.png" alt="Adaptive Equipment" class="program-card__icon">
+          <h3 class="program-card__title">Adaptive Equipment</h3>
+          <p class="program-card__text">Sensory items, adaptive seating, communication devices, and mobility equipment.</p>
+        </div>
+        <div class="program-card">
+          <img src="images/icons/college.png" alt="Food" class="program-card__icon">
+          <h3 class="program-card__title">Food &amp; Snacks</h3>
+          <p class="program-card__text">Individually packaged snacks, granola bars, juice boxes, and non-perishable food items.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drop-off Info -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="story">
+        <div class="story__content reveal-left">
+          <div class="section-tag">Drop-Off</div>
+          <h2>Where to Bring Donations</h2>
+          <p style="font-size: 17px; color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">You can drop off items at our location or arrange a pickup. If you have a large donation, please fill out the form below so we can prepare.</p>
+          <p style="font-size: 17px; color: var(--text-light); line-height: 1.7; margin-bottom: 8px;"><strong>📍 2105 Academy Circle</strong><br>Colorado Springs, CO 80909</p>
+          <p style="font-size: 17px; color: var(--text-light); line-height: 1.7;"><strong>📞 719-598-5555</strong></p>
+        </div>
+        <div class="story__image reveal-right">
+          <img src="images/content/home-teaser-parents.jpg" alt="Donation supplies">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Form -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Coordinate a Drop-Off</div>
+        <h2>Let Us Know What You Have</h2>
+        <p>Fill out the form so we can prepare for your donation and make the drop-off smooth.</p>
+      </div>
+      <form class="site-form reveal" action="https://formsubmit.co/info@wellcareco.com" method="POST">
+        <input type="hidden" name="_subject" value="4CO Kids — Item Donation">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://wellcaresite.github.io/4cokids-site/donate-items.html">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="item-name">Your Name *</label>
+            <input type="text" id="item-name" name="Name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="item-email">Email *</label>
+            <input type="email" id="item-email" name="Email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="item-phone">Phone</label>
+            <input type="tel" id="item-phone" name="Phone" placeholder="(719) 555-0000">
+          </div>
+          <div class="form-group">
+            <label for="item-type">What are you donating? *</label>
+            <select id="item-type" name="Item Type" required>
+              <option value="" disabled selected>Select a category...</option>
+              <option value="School Supplies">School Supplies</option>
+              <option value="Clothing & Coats">Clothing & Coats</option>
+              <option value="Adaptive Equipment">Adaptive Equipment</option>
+              <option value="Food & Snacks">Food & Snacks</option>
+              <option value="Mixed / Multiple">Mixed / Multiple Items</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="item-delivery">Drop-off or Pickup?</label>
+          <select id="item-delivery" name="Delivery Preference">
+            <option value="" disabled selected>Select preference...</option>
+            <option value="I will drop off">I will drop off at 2105 Academy Circle</option>
+            <option value="Please arrange pickup">Please arrange a pickup from my location</option>
+            <option value="Not sure yet">Not sure yet — let's discuss</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="item-details">Describe your donation *</label>
+          <textarea id="item-details" name="Description" placeholder="How many items? What sizes/ages? Any other details that help us prepare..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Submit Donation Info →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="donate">
+    <div class="container reveal">
+      <h2>Want to Give Money Instead?</h2>
+      <p>100% of your financial contribution goes directly to helping kids.</p>
+      <a href="#donate" class="btn btn-primary btn-lg">Donate via Square →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__nonprofit">4 Colorado Kids is a 501(c)(3) nonprofit organization. All donations are tax deductible.</div>
+      <div class="footer__top">
+        <div class="footer__brand"><img src="images/logo.png" alt="4 Colorado Kids"><p>Helping close the gap for local families and kids living in poverty in Colorado Springs and beyond.</p><div class="footer__social"><a href="https://www.facebook.com/4ColoradoKids" target="_blank" aria-label="Facebook"><img src="images/icons/facebook.png" alt=""></a><a href="#" target="_blank" aria-label="YouTube"><img src="images/icons/youtube.png" alt=""></a></div></div>
+        <div><h4>Programs</h4><ul class="footer__links"><li><a href="index.html#programs">Erase the Need</a></li><li><a href="index.html#programs">Sponsor a Smile</a></li><li><a href="index.html#programs">Adaptive Equipment</a></li></ul></div>
+        <div><h4>Take Action</h4><ul class="footer__links"><li><a href="#donate">Donate</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="host-a-drive.html">Host a Drive</a></li></ul></div>
+        <div><h4>Connect</h4><ul class="footer__links"><li><a href="contact-us.html">Contact Us</a></li><li><a href="tel:7195985555">719-598-5555</a></li><li><a href="contact-us.html#get-in-touch">Send a message</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2024 4 Colorado Kids. All rights reserved.</p><p>2105 Academy Circle, Colorado Springs, CO 80909</p></div>
+    </div>
+  </footer>
+
+  <a href="#donate" class="floating-donate">💛 Donate</a>
+  <script src="js/main.js"></script>
+</body>
+</html>
