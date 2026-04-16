@@ -523,8 +523,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------- Impact / Dollar Cards ---------- */
 .dollar-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .dollar-card {
