@@ -95,6 +95,109 @@
     </div>
   </section>
 
+  <!-- Host a Drive -->
+  <section class="section" id="host-a-drive">
+    <div class="container">
+      <div class="story">
+        <div class="story__content reveal-left">
+          <div class="section-tag">Make an Impact</div>
+          <h2>Host a Donation Drive</h2>
+          <p style="font-size: 17px; color: var(--text-light); line-height: 1.7; margin-bottom: 16px;">The kids and families we serve consistently need clothing, school supplies, jackets and coats, and adaptive equipment. Organizing a drive at your workplace, school, or community group is one of the most impactful ways to help.</p>
+          <p style="font-size: 15px; color: var(--text-light); margin-bottom: 8px;"><strong>How it works:</strong></p>
+          <ul style="list-style: disc; padding-left: 24px; margin-bottom: 0;">
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Sign up</strong> — Fill out the form below and we'll provide all the materials you need</li>
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Spread the word</strong> — Use our flyers and talking points to promote your drive</li>
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Collect donations</strong> — Set up bins and gather supplies from your community</li>
+            <li style="margin-bottom: 8px; color: var(--text-light); font-size: 15px;"><strong>Deliver</strong> — Bring donations to us or we can arrange a pickup</li>
+          </ul>
+        </div>
+        <div class="story__image reveal-right">
+          <img src="images/content/content-1.jpg" alt="Community donation drive">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Host a Drive Form -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Sign Up</div>
+        <h2>Start Your Drive</h2>
+        <p>Fill out the form below with your details and we'll get you set up with everything you need.</p>
+      </div>
+      <form class="site-form reveal" action="https://formsubmit.co/info@wellcareco.com" method="POST">
+        <input type="hidden" name="_subject" value="4CO Kids — Host a Drive Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://wellcaresite.github.io/4cokids-site/contact-us.html#host-a-drive">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="drive-name">Your Name *</label>
+            <input type="text" id="drive-name" name="Contact Name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="drive-org">Organization / Company *</label>
+            <input type="text" id="drive-org" name="Organization" placeholder="Company, school, or group name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="drive-email">Email *</label>
+            <input type="email" id="drive-email" name="Email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="drive-phone">Phone *</label>
+            <input type="tel" id="drive-phone" name="Phone" placeholder="(719) 555-0000" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="drive-type">What type of drive? *</label>
+            <select id="drive-type" name="Drive Type" required>
+              <option value="" disabled selected>Select a type...</option>
+              <option value="School Supplies">School Supplies</option>
+              <option value="Clothing & Winter Gear">Clothing & Winter Gear</option>
+              <option value="Backpack Drive">Backpack Drive</option>
+              <option value="Holiday / Toy Drive">Holiday / Toy Drive</option>
+              <option value="General Necessities">General Necessities</option>
+              <option value="Mixed / Multiple">Mixed / Multiple</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="drive-participants">Estimated Participants</label>
+            <input type="text" id="drive-participants" name="Estimated Participants" placeholder="e.g. 50 employees, 200 students">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="drive-start">Preferred Start Date</label>
+            <input type="date" id="drive-start" name="Start Date">
+          </div>
+          <div class="form-group">
+            <label for="drive-end">Preferred End Date</label>
+            <input type="date" id="drive-end" name="End Date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="drive-delivery">Drop-off or Pickup? *</label>
+          <select id="drive-delivery" name="Delivery Preference" required>
+            <option value="" disabled selected>Select preference...</option>
+            <option value="We will drop off at your location">We will drop off at your location (2105 Academy Circle)</option>
+            <option value="Please arrange a pickup">Please arrange a pickup from our location</option>
+            <option value="Not sure yet">Not sure yet — let's discuss</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="drive-details">Anything else we should know?</label>
+          <textarea id="drive-details" name="Additional Details" placeholder="Any special requirements, questions about materials, or details about your organization..."></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Submit Drive Request →</button>
+      </form>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section" id="donate">
     <div class="container reveal">
