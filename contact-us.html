@@ -52,26 +52,42 @@
         </div>
         <div class="contact-bar__item">
           <div class="contact-bar__icon">✉️</div>
-          <h4>Email Us</h4>
-          <p><a href="mailto:info@wellcareco.com">info@wellcareco.com</a></p>
+          <h4>Message Us</h4>
+          <p><a href="#get-in-touch">Fill out our form →</a></p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Form -->
-  <section class="section section--gray">
+  <section class="section section--gray" id="get-in-touch">
     <div class="container">
       <div class="section-header reveal">
         <div class="section-tag">Send a Message</div>
         <h2>Get in Touch</h2>
-        <p>Whether you want to volunteer, host a drive, partner with us, or just say hello — drop us a line.</p>
+        <p>Tell us what you need and we'll get back to you within 24 hours.</p>
       </div>
       <form class="site-form reveal" action="https://formsubmit.co/info@wellcareco.com" method="POST">
-        <input type="hidden" name="_subject" value="4CO Kids — Contact Form">
+        <input type="hidden" name="_subject" value="4CO Kids — Website Inquiry">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://wellcaresite.github.io/4cokids-site/contact-us.html">
         <input type="hidden" name="_template" value="table">
+        <div class="form-group">
+          <label for="contact-reason">I'd like to... *</label>
+          <select id="contact-reason" name="Reason" required>
+            <option value="" disabled selected>Select a reason...</option>
+            <option value="Volunteer">Volunteer my time</option>
+            <option value="Donate Items - School Supplies">Donate items — School Supplies</option>
+            <option value="Donate Items - Clothing / Coats">Donate items — Clothing / Coats</option>
+            <option value="Donate Items - Adaptive Equipment">Donate items — Adaptive Equipment</option>
+            <option value="Donate Items - Food / Snacks">Donate items — Food / Snacks</option>
+            <option value="Donate Items - Other">Donate items — Other</option>
+            <option value="Host a Drive">Host a donation drive</option>
+            <option value="Partner with Us">Partner with us (business / organization)</option>
+            <option value="General Question">Ask a general question</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
         <div class="form-row">
           <div class="form-group">
             <label for="contact-name">Your Name *</label>
@@ -83,12 +99,12 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="contact-subject">Subject</label>
-          <input type="text" id="contact-subject" name="Subject" placeholder="What is this about?">
+          <label for="contact-phone">Phone (optional)</label>
+          <input type="tel" id="contact-phone" name="Phone" placeholder="(719) 555-0000">
         </div>
         <div class="form-group">
-          <label for="contact-message">Message *</label>
-          <textarea id="contact-message" name="Message" placeholder="Tell us how we can help or how you'd like to get involved..." required></textarea>
+          <label for="contact-message">Tell us more *</label>
+          <textarea id="contact-message" name="Message" placeholder="What items do you have? When are you available? Any details that help us prepare..." required></textarea>
         </div>
         <button type="submit" class="form-submit-btn">Send Message →</button>
       </form>
@@ -215,7 +231,7 @@
         <div class="footer__brand"><img src="images/logo.png" alt="4 Colorado Kids"><p>Helping close the gap for local families and kids living in poverty in Colorado Springs and beyond.</p><div class="footer__social"><a href="https://www.facebook.com/4ColoradoKids" target="_blank" aria-label="Facebook"><img src="images/icons/facebook.png" alt=""></a><a href="#" target="_blank" aria-label="YouTube"><img src="images/icons/youtube.png" alt=""></a></div></div>
         <div><h4>Programs</h4><ul class="footer__links"><li><a href="index.html#programs">Erase the Need</a></li><li><a href="index.html#programs">Sponsor a Smile</a></li><li><a href="index.html#programs">Adaptive Equipment</a></li></ul></div>
         <div><h4>Take Action</h4><ul class="footer__links"><li><a href="#donate">Donate</a></li><li><a href="index.html#involved">Volunteer</a></li><li><a href="get-help.html">Request Help</a></li></ul></div>
-        <div><h4>Connect</h4><ul class="footer__links"><li><a href="contact-us.html">Contact Us</a></li><li><a href="tel:7195985555">719-598-5555</a></li><li><a href="mailto:info@wellcareco.com">info@wellcareco.com</a></li></ul></div>
+        <div><h4>Connect</h4><ul class="footer__links"><li><a href="#get-in-touch">Contact Us</a></li><li><a href="tel:7195985555">719-598-5555</a></li><li><a href="#get-in-touch">Send a message</a></li></ul></div>
       </div>
       <div class="footer__bottom"><p>&copy; 2024 4 Colorado Kids. All rights reserved.</p><p>2105 Academy Circle, Colorado Springs, CO 80909</p></div>
     </div>
