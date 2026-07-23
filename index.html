@@ -269,10 +269,14 @@
         <h2>Stay Updated</h2>
         <p>Get stories from the kids we help and updates on how your support is making a difference.</p>
       </div>
-      <div class="newsletter reveal">
-        <input type="email" placeholder="Your email address" aria-label="Email address">
-        <a href="#" class="btn btn-primary">Subscribe</a>
-      </div>
+      <form class="newsletter reveal" action="https://formsubmit.co/info@wellcareco.com" method="POST">
+        <input type="hidden" name="_subject" value="4CO Kids — Newsletter Signup">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://4cokids.org/thank-you.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="email" name="Email" placeholder="Your email address" aria-label="Email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
     </div>
   </section>
 
@@ -317,9 +321,7 @@
             <a href="https://www.facebook.com/4ColoradoKids" target="_blank" aria-label="Facebook">
               <img src="images/icons/facebook.png" alt="">
             </a>
-            <a href="#" target="_blank" aria-label="YouTube">
-              <img src="images/icons/youtube.png" alt="">
-            </a>
+
           </div>
         </div>
         <div>
@@ -350,7 +352,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p>&copy; 2024 4 Colorado Kids. All rights reserved.</p>
+        <p>&copy; 2025 4 Colorado Kids. All rights reserved.</p>
         <p>2105 Academy Circle, Colorado Springs, CO 80909</p>
       </div>
     </div>
